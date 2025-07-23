@@ -1,12 +1,27 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "tsx --env-file-if-exists=./.env ./src/index.ts",
+        "lint": "npx eslint src",
+        "prettier": "prettier \"src/**/*.{ts,tsx}\" --write",
+        "build": "echo \"nothing to build yet\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "fastify": "^5.4.0",
+        "yargs": "^18.0.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.31.0",
+        "@types/node": "^24.1.0",
+        "eslint": "^9.31.0",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.38.0"
+    }
 }

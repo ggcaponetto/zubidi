@@ -1,0 +1,11 @@
+app.zubidi.io {
+  reverse_proxy zubidi-frontend:3000
+}
+
+backend.zubidi.io {
+  reverse_proxy zubidi-backend:4000
+}
+
+docs.zubidi.io {
+  reverse_proxy zubidi-docs:5000
+}
